@@ -5,6 +5,9 @@ function onkoKirjautunut(){
     if(kirjautunut === 'kyllä'){
         document.getElementById('tervetuloa_teksti').textContent += localStorage.getItem("nimi");
     }
+    else {
+        document.getElementById('tervetuloa_teksti');
+    }
 }
 
 function kirjaudu(){
