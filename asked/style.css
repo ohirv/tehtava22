@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; /*setting the total width and height*/
 }
 
 body {
@@ -43,32 +43,32 @@ max-width: 450px;
 }
 
 .faq.active::before,.faq.active::after{
-    content: "\f075";
-	font-family: "Font Awesome 5 Free";
+    content: "\f075"; /*importing an icon*/
+    font-family: "Font Awesome 5 Free";
     color: teal;
     font-size: 7rem;
     position: absolute;
     top: 10px;
     left: 10px;
-    opacity: 0.1;
-    z-index: 0;
+    opacity: 0.1; /*transparency*/
+    z-index: 0; /*adjusts the order of the objects' layering when rendering*/
 }
 
 .faq.active::before{
     top: -30px;
     left: -30px;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /*rotates the icon*/
     color: rebeccapurple;
 }
 
 .faq .faq-text {
-    display: none;
+    display: none; /*hides the answer on toggle-off*/
 }
 
 .faq.active .faq-text {
-    display: block;
+    display: block; /*shows the answer*/ 
 }
-
+/*toggle on/off buttons settings*/
 .faq-toggle {
     position: absolute;
     top: 30px;
@@ -77,7 +77,7 @@ max-width: 450px;
     width: 30px;
     background-color: transparent;
     border: 0;
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 .faq-toggle:focus {
@@ -85,7 +85,7 @@ max-width: 450px;
 }
 
 .faq-toggle .fa-times {
-    display: none;
+    display: none; /*hides toggle-off button */
 }
 
 .faq.active .faq-toggle .fa-times {
