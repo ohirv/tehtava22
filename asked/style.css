@@ -18,6 +18,15 @@ h1, h5 {
     text-align: center;
 }
 
+p {
+max-width: 500px;
+text-align: justify; /*leveling the text*/
+}
+
+h3 {
+max-width: 450px;
+}
+
 .faq {
     position: relative; /*positioning the questions and answers section*/
     border: 1px solid grey;
